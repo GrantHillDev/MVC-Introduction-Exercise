@@ -17,9 +17,11 @@ namespace Testing
             _conn = conn;
         }
 
-        public IEnumerable<Product> GetAllProducts()//GetProducts()//used hotkey Ctrl + . to have VSC pprovide me with suggerstions that helped me to validate my impleemntation of the ProductRepository class, since it conforms to the IProductRepository interface, but it was showing a red squiggly line underneath,
+        public IEnumerable<Product> GetAllProducts()//GetProducts()//used hotkey Ctrl + . to have VSC provide me with suggestions that helped me to validate my implementation of the ProductRepository class, since it conforms to the IProductRepository interface, but it was showing a red squiggly line underneath,
         {//stubbed out method from the interface this class is deriving from.
-            return _conn.Query<Product>("SELECT * FROM PRODUCTS;");//("Select * from products");//looks like SQL to me.... so why isn;t all fo the font capitalized?
+            return _conn.Query<Product>("SELECT * FROM PRODUCTS;");//("Select * from products");//looks like SQL to me.... so why isn't all of the font capitalized?
         }
     }
 }
+
+
